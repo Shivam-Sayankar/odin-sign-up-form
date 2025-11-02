@@ -3,57 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Odin Sign-up form</title>
+    <title>Sign up to Cosmoscope</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="background">
-        
-    </div>
-    <div class="main">
-        <div class="headings">
-            <h1>Experience the Cosmos in Unseen Detail.</h1>
-            <h3>Sign up to access exclusive high-resolution images from the James Webb Space Telescope.</h2>
+    <div class="container">
+        <div class="background">
+           <div class="logo">
+            <img src="images/planet.png" alt="cosmo-logo" id="logo-img">
+            <h1 id="logo-text">COSMOSCOPE</h1>
+           </div> 
+           <p id="bg-credits">Photo by NASA <a href="https://science.nasa.gov/asset/webb/sagittarius-b2-miri-image/"> (James Webb Telescope)</a></p>
         </div>
-        <div class="form-section">
-            <h3>Let's do this!</h2>
-            <form action="index.html" id="main-form">
+        <div class="main">
+            <div class="headings">
+                <h1 id="main-heading">Experience the Cosmos in Unseen Detail 🚀</h1>
+                <h3 id="main-subheading">Sign up to access exclusive high-resolution images from the James Webb Space Telescope</h2>
+            </div>
+            <div class="form-section">
+                <h3 id="form-heading">Let's do this!</h2>
+                <form action="index.html" id="main-form">
 
-                <div class="input-group">
-                    <label for="first-name">FIRST NAME</label>
-                    <input type="text" name="" id="first-name">
-                </div>
+                    <div class="input-group">
+                        <label for="first-name">FIRST NAME</label>
+                        <input type="text" name="" id="first-name">
+                    </div>
 
-                <div class="input-group">
-                    <label for="last-name">LAST NAME</label>
-                    <input type="text" name="" id="last-name">
-                </div>
+                    <div class="input-group">
+                        <label for="last-name">LAST NAME</label>
+                        <input type="text" name="" id="last-name">
+                    </div>
 
-                <div class="input-group">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
-                </div>
+                    <div class="input-group">
+                        <label for="email">EMAIL</label>
+                        <input type="email" name="email" id="email">
+                    </div>
 
-                <div class="input-group">
-                    <label for="phone">PHONE NUMBER</label>
-                    <input type="tel" name="" id="phone">
-                </div>                
+                    <div class="input-group">
+                        <label for="phone">PHONE NUMBER</label>
+                        <input type="tel" name="" id="phone">
+                    </div>                
 
-                <div class="input-group">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="" id="password">
-                </div>
+                    <div class="input-group">
+                        <label for="password">PASSWORD</label>
+                        <input type="password" name="" id="password">
+                    </div>
 
-                <div class="input-group">
-                    <label for="password-confirm">CONFIRM PASSWORD</label>
-                    <input type="password" name="" id="password-confirm">
-                </div>
-            </form>
+                    <div class="input-group">
+                        <label for="password-confirm">CONFIRM PASSWORD</label>
+                        <input type="password" name="" id="password-confirm">
+                    </div>
+                </form>
+            </div>
+            <div class="form-submission">
+                <button type="submit" value="" form="main-form">Create Account</button>
+                <p>Already have an account? <a href="#" id="login-link">Log in</a></p>
+            </div>
         </div>
-        <div class="form-submission">
-            <button type="submit" value="" form="main-form">Create Account</button>
-            <p>Already have an account? <a href="">Log in</a></p>
-        </div>
-    </div>
+    </div>    
 </body>
 </html>
